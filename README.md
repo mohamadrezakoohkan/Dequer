@@ -17,8 +17,22 @@ inside **Cell** there is a static variable named **height**  for **UITableViewCe
 - Swift 4.0+
 >  Also fully compatible with **Swift** version **5.x**
 
-## Integration
+## Installation
 
+### CocoaPods
+
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Dequer into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+
+pod 'Dequer', :git => 'https://github.com/mohamadrezakoohkan/Dequer.git'
+```
+
+### Manually
+
+If you prefer not to use any of the aforementioned dependency managers, you can use source code manually. get latest relase from [Releases](https://github.com/mohamadrezakoohkan/Dequer/releases).
+
+#
 
 
 ## Usage
@@ -55,7 +69,7 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 
 ### Contact
 
-Follow and contact me on [Instagram](https://www.instagram.com/mohamadreza.codes/),  [Github](https://github.com/mohamadrezakoohkan), [LinkedIn](https://www.linkedin.com/in/mohammad-reza-koohkan-558306160/) or [stack overflow](https://stackoverflow.com/users/9706268/mohamad-reza-koohkan?tab=profile). If you find an issue [open a ticket](https://github.com/mohamadrezakoohkan/Clean-Swift-UITableViewCell/issues/new). You can send me email at mohamad_koohkan@icloud.com .
+Follow and contact me on [Instagram](https://www.instagram.com/mohamadreza.codes/),  [Github](https://github.com/mohamadrezakoohkan), [LinkedIn](https://www.linkedin.com/in/mohammad-reza-koohkan-558306160/) or [stack overflow](https://stackoverflow.com/users/9706268/mohamad-reza-koohkan?tab=profile). If you find an issue [open a ticket](https://github.com/mohamadrezakoohkan/Dequerissues/new). You can send me email at mohamad_koohkan@icloud.com .
 
 ### License
-CleanSwiftUITableCell is released under the [MIT license](https://github.com/mohamadrezakoohkan/Clean-Swift-UITableViewCell/blob/master/LICENSE.md).
+CleanSwiftUITableCell is released under the [MIT license](https://github.com/mohamadrezakoohkan/Dequer/blob/master/LICENSE.md).
