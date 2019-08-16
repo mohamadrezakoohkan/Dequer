@@ -1,4 +1,9 @@
+
+![Dequer is Light weight library to handle Any Cell](https://github.com/mohamadrezakoohkan/Dequer/tree/master/Dequer/Dequer.png)
+
 # Dequer
+Dequer is a light weight library to handle Any Cell
+
 One of the most used things in iOS development is deque UITableViewCell or UICollectionViewCell and it has some configuration. I maded an extension and protocol which initialize a cell as clean as possible.  
 
 ## Availability
