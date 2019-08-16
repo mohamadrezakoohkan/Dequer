@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD9A2AD323074DB900E0FB35 /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A2AD223074DB900E0FB35 /* MainNavigation.swift */; };
+		DD9A2AD52307549700E0FB35 /* Dequer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DD9A2AD42307549700E0FB35 /* Dequer.podspec */; };
 		DDF8389823071794009A7861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF8389723071794009A7861 /* AppDelegate.swift */; };
-		DDF8389A23071794009A7861 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF8389923071794009A7861 /* ViewController.swift */; };
 		DDF8389D23071794009A7861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF8389B23071794009A7861 /* Main.storyboard */; };
 		DDF8389F23071796009A7861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF8389E23071796009A7861 /* Assets.xcassets */; };
 		DDF838A223071796009A7861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF838A023071796009A7861 /* LaunchScreen.storyboard */; };
+		DDF838AB230717F4009A7861 /* Dequer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838AA230717F4009A7861 /* Dequer.swift */; };
+		DDF838AD23071D94009A7861 /* Dequer+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838AC23071D94009A7861 /* Dequer+TableView.swift */; };
+		DDF838B0230722F6009A7861 /* Dequer+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838AF230722F6009A7861 /* Dequer+CollectionView.swift */; };
+		DDF838B223072468009A7861 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838B123072468009A7861 /* PersonCell.swift */; };
+		DDF838B4230725BF009A7861 /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838B3230725BF009A7861 /* TableVC.swift */; };
+		DDF838B6230726D0009A7861 /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838B5230726D0009A7861 /* CollectionVC.swift */; };
+		DDF838B8230726F6009A7861 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838B7230726F6009A7861 /* AnimalCell.swift */; };
+		DDF838C023072922009A7861 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838BF23072922009A7861 /* Person.swift */; };
+		DDF838C223074723009A7861 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838C123074723009A7861 /* Animal.swift */; };
+		DDF838C4230749F3009A7861 /* AnimalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF838C3230749F3009A7861 /* AnimalCell.xib */; };
+		DDF838C623074A54009A7861 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838C523074A54009A7861 /* MainVC.swift */; };
+		DDF838C823074B1C009A7861 /* MohamadrezaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838C723074B1C009A7861 /* MohamadrezaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD9A2AD223074DB900E0FB35 /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
+		DD9A2AD42307549700E0FB35 /* Dequer.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dequer.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DDF8389423071794009A7861 /* Dequer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dequer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF8389723071794009A7861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDF8389923071794009A7861 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDF8389C23071794009A7861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDF8389E23071796009A7861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDF838A123071796009A7861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDF838A323071796009A7861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF838AA230717F4009A7861 /* Dequer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dequer.swift; sourceTree = "<group>"; };
+		DDF838AC23071D94009A7861 /* Dequer+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dequer+TableView.swift"; sourceTree = "<group>"; };
+		DDF838AF230722F6009A7861 /* Dequer+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dequer+CollectionView.swift"; sourceTree = "<group>"; };
+		DDF838B123072468009A7861 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		DDF838B3230725BF009A7861 /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
+		DDF838B5230726D0009A7861 /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
+		DDF838B7230726F6009A7861 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
+		DDF838BF23072922009A7861 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DDF838C123074723009A7861 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		DDF838C3230749F3009A7861 /* AnimalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalCell.xib; sourceTree = "<group>"; };
+		DDF838C523074A54009A7861 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		DDF838C723074B1C009A7861 /* MohamadrezaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MohamadrezaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +80,75 @@
 		DDF8389623071794009A7861 /* Dequer */ = {
 			isa = PBXGroup;
 			children = (
+				DDF838A9230717AF009A7861 /* Source */,
+				DDF838B9230728BD009A7861 /* App */,
 				DDF8389723071794009A7861 /* AppDelegate.swift */,
-				DDF8389923071794009A7861 /* ViewController.swift */,
-				DDF8389B23071794009A7861 /* Main.storyboard */,
 				DDF8389E23071796009A7861 /* Assets.xcassets */,
 				DDF838A023071796009A7861 /* LaunchScreen.storyboard */,
 				DDF838A323071796009A7861 /* Info.plist */,
+				DD9A2AD42307549700E0FB35 /* Dequer.podspec */,
+				DDF838C723074B1C009A7861 /* MohamadrezaView.swift */,
 			);
 			path = Dequer;
+			sourceTree = "<group>";
+		};
+		DDF838A9230717AF009A7861 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DDF838AA230717F4009A7861 /* Dequer.swift */,
+				DDF838AC23071D94009A7861 /* Dequer+TableView.swift */,
+				DDF838AF230722F6009A7861 /* Dequer+CollectionView.swift */,
+			);
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		DDF838B9230728BD009A7861 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DDF838BA230728C9009A7861 /* Main */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DDF838BA230728C9009A7861 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DDF8389B23071794009A7861 /* Main.storyboard */,
+				DD9A2AD223074DB900E0FB35 /* MainNavigation.swift */,
+				DDF838BB230728D5009A7861 /* ViewController */,
+				DDF838BD230728E4009A7861 /* View */,
+				DDF838BE230728E9009A7861 /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DDF838BB230728D5009A7861 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DDF838C523074A54009A7861 /* MainVC.swift */,
+				DDF838B3230725BF009A7861 /* TableVC.swift */,
+				DDF838B5230726D0009A7861 /* CollectionVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DDF838BD230728E4009A7861 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDF838B123072468009A7861 /* PersonCell.swift */,
+				DDF838B7230726F6009A7861 /* AnimalCell.swift */,
+				DDF838C3230749F3009A7861 /* AnimalCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDF838BE230728E9009A7861 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDF838BF23072922009A7861 /* Person.swift */,
+				DDF838C123074723009A7861 /* Animal.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +209,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9A2AD52307549700E0FB35 /* Dequer.podspec in Resources */,
 				DDF838A223071796009A7861 /* LaunchScreen.storyboard in Resources */,
+				DDF838C4230749F3009A7861 /* AnimalCell.xib in Resources */,
 				DDF8389F23071796009A7861 /* Assets.xcassets in Resources */,
 				DDF8389D23071794009A7861 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +224,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDF8389A23071794009A7861 /* ViewController.swift in Sources */,
+				DDF838B223072468009A7861 /* PersonCell.swift in Sources */,
+				DDF838AD23071D94009A7861 /* Dequer+TableView.swift in Sources */,
+				DDF838AB230717F4009A7861 /* Dequer.swift in Sources */,
+				DDF838B4230725BF009A7861 /* TableVC.swift in Sources */,
+				DDF838C823074B1C009A7861 /* MohamadrezaView.swift in Sources */,
+				DDF838C623074A54009A7861 /* MainVC.swift in Sources */,
+				DDF838B6230726D0009A7861 /* CollectionVC.swift in Sources */,
+				DDF838B8230726F6009A7861 /* AnimalCell.swift in Sources */,
+				DD9A2AD323074DB900E0FB35 /* MainNavigation.swift in Sources */,
+				DDF838C023072922009A7861 /* Person.swift in Sources */,
+				DDF838B0230722F6009A7861 /* Dequer+CollectionView.swift in Sources */,
 				DDF8389823071794009A7861 /* AppDelegate.swift in Sources */,
+				DDF838C223074723009A7861 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,10 +385,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZ8D8NYCJ8;
 				INFOPLIST_FILE = Dequer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.applecode.library.Dequer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -303,10 +405,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZ8D8NYCJ8;
 				INFOPLIST_FILE = Dequer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.applecode.library.Dequer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
