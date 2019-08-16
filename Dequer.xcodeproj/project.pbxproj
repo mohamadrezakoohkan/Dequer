@@ -71,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				DDF8389623071794009A7861 /* Dequer */,
-				DD9A2AE2230775B100E0FB35 /* Dequer.png */,
 				DDF8389523071794009A7861 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +96,7 @@
 				DD9A2AD623076E4400E0FB35 /* LICENSE.md */,
 				DD9A2AD823076E4A00E0FB35 /* README.md */,
 				DDF838C723074B1C009A7861 /* MohamadrezaView.swift */,
+				DD9A2AE2230775B100E0FB35 /* Dequer.png */,
 			);
 			path = Dequer;
 			sourceTree = "<group>";
