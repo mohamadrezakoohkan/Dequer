@@ -32,12 +32,17 @@ pod 'Dequer', :git => 'https://github.com/mohamadrezakoohkan/Dequer.git'
 
 If you prefer not to use any of the aforementioned dependency managers, you can use source code manually. get latest relase from [Releases](https://github.com/mohamadrezakoohkan/Dequer/releases).
 
-#
 
 
 ## Usage
 
-Clone the project and use example project in for more.
+### Example project
+
+Clone the project and use example project  for more.
+
+#
+
+Example of how to implement Dequer in your project.
 
 ```swift
 
