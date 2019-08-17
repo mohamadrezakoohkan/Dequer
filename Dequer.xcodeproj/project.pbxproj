@@ -27,7 +27,6 @@
 		DDF838C4230749F3009A7861 /* AnimalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF838C3230749F3009A7861 /* AnimalCell.xib */; };
 		DDF838C623074A54009A7861 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838C523074A54009A7861 /* MainVC.swift */; };
 		DDF838C823074B1C009A7861 /* MohamadrezaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838C723074B1C009A7861 /* MohamadrezaView.swift */; };
-		DDF838CC2308304F009A7861 /* Dequer.png in Resources */ = {isa = PBXBuildFile; fileRef = DDF838CB2308304F009A7861 /* Dequer.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +52,6 @@
 		DDF838C3230749F3009A7861 /* AnimalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalCell.xib; sourceTree = "<group>"; };
 		DDF838C523074A54009A7861 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		DDF838C723074B1C009A7861 /* MohamadrezaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MohamadrezaView.swift; sourceTree = "<group>"; };
-		DDF838CB2308304F009A7861 /* Dequer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dequer.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +94,6 @@
 				DD9A2AD623076E4400E0FB35 /* LICENSE.md */,
 				DD9A2AD823076E4A00E0FB35 /* README.md */,
 				DDF838C723074B1C009A7861 /* MohamadrezaView.swift */,
-				DDF838CB2308304F009A7861 /* Dequer.png */,
 			);
 			path = Dequer;
 			sourceTree = "<group>";
@@ -221,7 +218,6 @@
 				DD9A2AD52307549700E0FB35 /* Dequer.podspec in Resources */,
 				DDF838A223071796009A7861 /* LaunchScreen.storyboard in Resources */,
 				DDF838C4230749F3009A7861 /* AnimalCell.xib in Resources */,
-				DDF838CC2308304F009A7861 /* Dequer.png in Resources */,
 				DD9A2AD923076E4B00E0FB35 /* README.md in Resources */,
 				DDF8389F23071796009A7861 /* Assets.xcassets in Resources */,
 				DD9A2AD723076E4400E0FB35 /* LICENSE.md in Resources */,
