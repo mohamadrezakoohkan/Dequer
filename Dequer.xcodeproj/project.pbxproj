@@ -11,7 +11,6 @@
 		DD9A2AD52307549700E0FB35 /* Dequer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DD9A2AD42307549700E0FB35 /* Dequer.podspec */; };
 		DD9A2AD723076E4400E0FB35 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = DD9A2AD623076E4400E0FB35 /* LICENSE.md */; };
 		DD9A2AD923076E4B00E0FB35 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD9A2AD823076E4A00E0FB35 /* README.md */; };
-		DD9A2AE72307769300E0FB35 /* Dequer.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9A2AE62307769200E0FB35 /* Dequer.png */; };
 		DDF8389823071794009A7861 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF8389723071794009A7861 /* AppDelegate.swift */; };
 		DDF8389D23071794009A7861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF8389B23071794009A7861 /* Main.storyboard */; };
 		DDF8389F23071796009A7861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF8389E23071796009A7861 /* Assets.xcassets */; };
@@ -32,10 +31,9 @@
 
 /* Begin PBXFileReference section */
 		DD9A2AD223074DB900E0FB35 /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
-		DD9A2AD42307549700E0FB35 /* Dequer.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dequer.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DD9A2AD42307549700E0FB35 /* Dequer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dequer.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DD9A2AD623076E4400E0FB35 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
 		DD9A2AD823076E4A00E0FB35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		DD9A2AE62307769200E0FB35 /* Dequer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dequer.png; sourceTree = "<group>"; };
 		DDF8389423071794009A7861 /* Dequer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dequer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF8389723071794009A7861 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDF8389C23071794009A7861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				DD9A2AD623076E4400E0FB35 /* LICENSE.md */,
 				DD9A2AD823076E4A00E0FB35 /* README.md */,
 				DDF838C723074B1C009A7861 /* MohamadrezaView.swift */,
-				DD9A2AE62307769200E0FB35 /* Dequer.png */,
 			);
 			path = Dequer;
 			sourceTree = "<group>";
@@ -221,7 +218,6 @@
 				DD9A2AD52307549700E0FB35 /* Dequer.podspec in Resources */,
 				DDF838A223071796009A7861 /* LaunchScreen.storyboard in Resources */,
 				DDF838C4230749F3009A7861 /* AnimalCell.xib in Resources */,
-				DD9A2AE72307769300E0FB35 /* Dequer.png in Resources */,
 				DD9A2AD923076E4B00E0FB35 /* README.md in Resources */,
 				DDF8389F23071796009A7861 /* Assets.xcassets in Resources */,
 				DD9A2AD723076E4400E0FB35 /* LICENSE.md in Resources */,
