@@ -7,7 +7,7 @@ Dequer is a light weight library to handle Any Cell
 One of the most used things in iOS development is deque UITableViewCell or UICollectionViewCell and it has some configuration. I maded an extension and protocol which initialize a cell as clean as possible.  
 
 ## Availability
-for the completion handler block  used in protocol which is a closure , every **Cell class** should mark with **final** this means that can not be ovveride this class or use it as superclass and block inheritance.
+for the completion handler block  used in protocol which is a closure , every **Cell class** should mark with **final** this means that can not be override this class or use it as superclass and block inheritance.
 
 ## Protocol oriented
 every Cell class which conforms to **Dequer** can use this code.
@@ -32,6 +32,25 @@ inside **Cell** there is a static variable named **height**  for **UITableViewCe
 
 pod 'Dequer', :git => 'https://github.com/mohamadrezakoohkan/Dequer.git'
 ```
+
+### Swift Package Manager
+
+You can use [The Swift Package Manager](https://swift.org/package-manager) to install `Dequer` by adding the dequer package description to your `Package.swift` file:
+
+```swift
+// swift-tools-version:4.0
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
+import PackageDescription
+
+let package = Package(
+    name: "YOUR_PROJECT_NAME",
+    dependencies: [
+        .package(url: "https://github.com/mohamadrezakoohkan/Dequer.git", from: "1.0.0"),
+    ]
+)
+```
+Then run `swift build` in Terminal to build `Dequer`.
 
 ### Manually
 
