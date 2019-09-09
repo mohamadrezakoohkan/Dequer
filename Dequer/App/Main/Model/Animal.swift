@@ -20,7 +20,7 @@ enum Animal: String,CaseIterable {
     case lizard = "Lizard"
     case octopus = "Octopus"
     case snake = "Snake"
-    case tun = "Tun"
+    case tun = "Tuna"
     
     var image: String {
         return self.rawValue + "-icon"

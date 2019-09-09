@@ -10,7 +10,7 @@ import UIKit
 
 @available(iOS 9.0, *)
 class MohamadrezaView: UIView {
-
+    
     private let spacing: CGFloat = 20
     private let itemsHeight: CGFloat = 45
     
@@ -22,24 +22,24 @@ class MohamadrezaView: UIView {
         self.linkedIn
     ]
     
-    lazy var github: Button = {
+    fileprivate lazy var github: Button = {
         return Button.make(of: .github,target: self,selector: self.selecotor)
     }()
     
-    lazy var instagram: Button = {
+    fileprivate lazy var instagram: Button = {
         return Button.make(of: .instagram,target: self,selector: self.selecotor)
     }()
     
-    lazy var linkedIn: Button = {
+    fileprivate lazy var linkedIn: Button = {
         return Button.make(of: .linkedIn,target: self,selector: self.selecotor)
     }()
     
-    lazy var stackoverflow: Button = {
+    fileprivate lazy var stackoverflow: Button = {
         return Button.make(of: .stackoverflow,target: self,selector: self.selecotor)
     }()
     
     lazy var stackView: UIStackView = {
-        let stack = UIStackView.init(arrangedSubviews: self.buttons)
+        let stack = UIStackView(arrangedSubviews: self.buttons)
         stack.axis = .horizontal
         stack.alignment = .fill
         stack.distribution = .fillEqually
@@ -48,19 +48,14 @@ class MohamadrezaView: UIView {
         return stack
     }()
     
-    @objc func tappedIn(_ sender: Button) {
+    @objc fileprivate func tappedIn(_ sender: Button) {
         sender.open()
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.addView()
-        self.addConstaints()
-    }
-
-    
-    func addView() {
         self.addSubview(self.stackView)
+        self.addConstaints()
     }
     
     func addConstaints() {
@@ -80,7 +75,7 @@ class MohamadrezaView: UIView {
     }
 }
 
-class Button: UIButton {
+fileprivate class Button: UIButton {
     
     var kind: Button.Kind = .github
     
@@ -122,7 +117,7 @@ class Button: UIButton {
         button.kind = kind
         return button
     }
-
+    
     func open() {
         let url = self.kind.url
         guard UIApplication.shared.canOpenURL(url) else {return}

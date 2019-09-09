@@ -96,6 +96,26 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 }
 ```
 
+### Data Binding
+
+
+As binding data in `cellForRowAt` or `cellForItemAt` should be avoided,  I maded a method called `bind` which can use for data binding  In [This Commit](https://github.com/mohamadrezakoohkan/Dequer/commit/548dca9d73a05078e7e2c028db25e9e1e61e5fba#diff-04c6e90faac2675aa89e2176d2eec7d8).
+
+
+```swift
+
+override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    return AnimalCell.deque(in: collectionView, at: indexPath)
+}
+
+override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    AnimalCell.bind(to: cell) {
+        $0.animal = self.animals[indexPath.row]
+    }
+}
+```
+
+
 ### Contact
 
 Follow and contact me on [Instagram](https://www.instagram.com/mohamadreza.codes/),  [Github](https://github.com/mohamadrezakoohkan), [LinkedIn](https://www.linkedin.com/in/mohammad-reza-koohkan-558306160/) or [stack overflow](https://stackoverflow.com/users/9706268/mohamad-reza-koohkan?tab=profile). If you find an issue [open a ticket](https://github.com/mohamadrezakoohkan/Dequerissues/new). You can send me email at mohamad_koohkan@icloud.com .
