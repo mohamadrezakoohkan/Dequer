@@ -16,19 +16,27 @@ class CollectionVC: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         AnimalCell.register(in: self.collectionView)
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
         return self.animals.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return AnimalCell.deque(in: collectionView, at: indexPath) { (cell, row) in
-            cell.animal = self.animals[row]
+        
+        return AnimalCell.deque(in: collectionView, at: indexPath)
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        AnimalCell.bind(to: cell) {
+            $0.animal = self.animals[indexPath.row]
         }
     }
-
+    
 }
 
 extension CollectionVC: UICollectionViewDelegateFlowLayout {

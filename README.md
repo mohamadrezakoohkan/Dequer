@@ -46,7 +46,7 @@ import PackageDescription
 let package = Package(
     name: "YOUR_PROJECT_NAME",
     dependencies: [
-        .package(url: "https://github.com/mohamadrezakoohkan/Dequer.git", from: "1.0.0"),
+        .package(url: "https://github.com/mohamadrezakoohkan/Dequer.git", from: "1.1.0"),
     ]
 )
 ```
@@ -101,4 +101,4 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 Follow and contact me on [Instagram](https://www.instagram.com/mohamadreza.codes/),  [Github](https://github.com/mohamadrezakoohkan), [LinkedIn](https://www.linkedin.com/in/mohammad-reza-koohkan-558306160/) or [stack overflow](https://stackoverflow.com/users/9706268/mohamad-reza-koohkan?tab=profile). If you find an issue [open a ticket](https://github.com/mohamadrezakoohkan/Dequerissues/new). You can send me email at mohamad_koohkan@icloud.com .
 
 ### License
-CleanSwiftUITableCell is released under the [MIT license](https://github.com/mohamadrezakoohkan/Dequer/blob/master/LICENSE.md).
+Dequer is released under the [MIT license](https://github.com/mohamadrezakoohkan/Dequer/blob/master/LICENSE.md).

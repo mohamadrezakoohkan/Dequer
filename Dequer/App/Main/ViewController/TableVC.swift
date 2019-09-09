@@ -10,14 +10,7 @@ import UIKit
 
 class TableVC: UITableViewController {
     
-    lazy var persons: [Person] = [
-        Person(name: "MohamadReza", age: 22),
-        Person(name: "Nicki", age: 19),
-        Person(name: "Martin", age: 25),
-        Person(name: "John", age: 32),
-        Person(name: "Steve", age: 40),
-        
-    ]
+    lazy var persons: [Person] = Person.society(numberOfPersons: 512)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,16 +18,26 @@ class TableVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return self.persons.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return PersonCell.deque(in: tableView, at: indexPath) { (cell, row) in
-            cell.person = self.persons[row]
+        
+        return PersonCell.deque(in: tableView,at: indexPath) {
+            $0.person = self.persons[$1]
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.alpha = 0
+        UIView.animate(withDuration: 0.3) {
+            cell.alpha = 1
         }
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
         return PersonCell.height
     }
 

@@ -15,18 +15,21 @@ public extension Dequer where Self: UICollectionViewCell {
 
     
     static func deque(in view: UIView,
-                      at indexPath: IndexPath?,
+                      at indexPath: IndexPath,
                       reuseIdentifier id: String = Self.dequerIdentifier,
                       _ completion: ((Self,Int) -> Void)? = nil) -> Self {
         
         guard let collectionView = view as? UICollectionView
             else { fatalError(error(view,of: UICollectionView.self)) }
         
-        guard let index = indexPath else {fatalError("indexPath is nil")}
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: id, for: index) as! Self
-        completion?(cell,index.row)
-        return cell
+        let cell = collectionView.dequerCell(self, for: indexPath)
+        
+        guard let dequerCell = cell as? Self
+            else { fatalError() }
+        
+        completion?(dequerCell,indexPath.row)
+        return dequerCell
     }
     
     static func register(in view: UIView,
@@ -41,6 +44,10 @@ public extension Dequer where Self: UICollectionViewCell {
         collectionView.register(nib, forCellWithReuseIdentifier: id)
     }
     
+    static func bind(to cell: UIView, _ bind: (Self) -> Void) {
+        bind(cell as! Self)
+    }
+    
     
 }
 
@@ -51,4 +58,10 @@ public extension UICollectionViewCell {
     }
 }
 
+internal extension UICollectionView {
+    
+    func dequerCell(_ cell: UICollectionViewCell.Type,for indexPath: IndexPath) -> UICollectionViewCell {
+        return self.dequeueReusableCell(withReuseIdentifier: cell.dequerIdentifier, for: indexPath)
+    }
+}
 

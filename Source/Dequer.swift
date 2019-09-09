@@ -11,7 +11,7 @@ import UIKit.UIView
 public protocol Dequer {
 
     static func deque(in view: UIView,
-                      at indexPath: IndexPath?,
+                      at indexPath: IndexPath,
                        reuseIdentifier: String,
                        _ completion: ((Self,Int) -> Void)?) -> Self
     
@@ -20,6 +20,8 @@ public protocol Dequer {
                          bundle: Bundle,
                          reuseIdentifier id: String)
     
+    
+    static func bind(to cell: UIView,_ bind: (Self) -> Void)
     
     static var height: CGFloat { get }
     
