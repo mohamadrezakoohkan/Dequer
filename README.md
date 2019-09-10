@@ -4,7 +4,7 @@
 # Dequer
 Dequer is a light weight library to handle Any Cell
 
-One of the most used things in iOS development is deque UITableViewCell or UICollectionViewCell and it has some configuration. I maded an extension and protocol which initialize a cell as clean as possible.  
+One of the most used things in iOS development is deque `UITableViewCell` or `UICollectionViewCell` through `DataSources` and it has some configuration. I maded an extension and protocol which reuse a cell as clean as possible.  
 
 ## Availability
 for the completion handler block  used in protocol which is a closure , every **Cell class** should mark with **final** this means that can not be override this class or use it as superclass and block inheritance.
