@@ -46,7 +46,7 @@ import PackageDescription
 let package = Package(
     name: "YOUR_PROJECT_NAME",
     dependencies: [
-        .package(url: "https://github.com/mohamadrezakoohkan/Dequer.git", from: "1.1.0"),
+        .package(url: "https://github.com/mohamadrezakoohkan/Dequer.git", from: "1.2.0"),
     ]
 )
 ```
@@ -71,6 +71,7 @@ Example of how to implement Dequer in your project.
 ```swift
 
 import UIKit
+import Dequer
 
 final class PersonCell: UITableViewCell, Dequer {
 
