@@ -11,7 +11,7 @@
 Pod::Spec.new do |s|
 
 s.name             = 'Dequer'
-s.version          = '1.2.1'
+s.version          = '1.2.2'
 s.summary          = 'Light weight library to handle Any Cell'
 s.description      = 'One of the most used things in iOS development is deque UITableViewCell and it has some configuration. I maded an extension and protocol which initialize a cell as clean as possible.
 
