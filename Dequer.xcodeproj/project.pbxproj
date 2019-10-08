@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD553DD22338F08E000A900B /* DequerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD553DD12338F08E000A900B /* DequerDataSource.swift */; };
+		DD553DD82338FD50000A900B /* DequerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD553DD72338FD50000A900B /* DequerError.swift */; };
 		DD9A2AD323074DB900E0FB35 /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A2AD223074DB900E0FB35 /* MainNavigation.swift */; };
 		DD9A2AD52307549700E0FB35 /* Dequer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DD9A2AD42307549700E0FB35 /* Dequer.podspec */; };
 		DD9A2AD723076E4400E0FB35 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = DD9A2AD623076E4400E0FB35 /* LICENSE.md */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD553DD12338F08E000A900B /* DequerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequerDataSource.swift; sourceTree = "<group>"; };
+		DD553DD72338FD50000A900B /* DequerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequerError.swift; sourceTree = "<group>"; };
 		DD9A2AD223074DB900E0FB35 /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
 		DD9A2AD42307549700E0FB35 /* Dequer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dequer.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DD9A2AD623076E4400E0FB35 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
@@ -102,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				DDF838AA230717F4009A7861 /* Dequer.swift */,
+				DD553DD12338F08E000A900B /* DequerDataSource.swift */,
+				DD553DD72338FD50000A900B /* DequerError.swift */,
 				DDF838AC23071D94009A7861 /* Dequer+TableView.swift */,
 				DDF838AF230722F6009A7861 /* Dequer+CollectionView.swift */,
 			);
@@ -234,11 +240,13 @@
 			files = (
 				DDF838B223072468009A7861 /* PersonCell.swift in Sources */,
 				DDF838AD23071D94009A7861 /* Dequer+TableView.swift in Sources */,
+				DD553DD22338F08E000A900B /* DequerDataSource.swift in Sources */,
 				DDF838AB230717F4009A7861 /* Dequer.swift in Sources */,
 				DDF838B4230725BF009A7861 /* TableVC.swift in Sources */,
 				DDF838C823074B1C009A7861 /* MohamadrezaView.swift in Sources */,
 				DDF838C623074A54009A7861 /* MainVC.swift in Sources */,
 				DDF838B6230726D0009A7861 /* CollectionVC.swift in Sources */,
+				DD553DD82338FD50000A900B /* DequerError.swift in Sources */,
 				DDF838B8230726F6009A7861 /* AnimalCell.swift in Sources */,
 				DD9A2AD323074DB900E0FB35 /* MainNavigation.swift in Sources */,
 				DDF838C023072922009A7861 /* Person.swift in Sources */,
@@ -390,6 +398,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZ8D8NYCJ8;
 				INFOPLIST_FILE = Dequer/Info.plist;
@@ -401,6 +411,7 @@
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.applecode.library.Dequer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -410,6 +421,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZ8D8NYCJ8;
 				INFOPLIST_FILE = Dequer/Info.plist;
@@ -421,6 +434,7 @@
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.applecode.library.Dequer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

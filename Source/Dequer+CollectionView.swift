@@ -13,39 +13,29 @@ public extension Dequer where Self: UICollectionViewCell {
     
     static var height: CGFloat { return .zero }
 
-    
-    static func deque(in view: UIView,
+    static func deque(in dataSource: DequerDataSource,
                       at indexPath: IndexPath,
                       reuseIdentifier id: String = Self.dequerIdentifier,
                       _ completion: ((Self,Int) -> Void)? = nil) -> Self {
-        
-        guard let collectionView = view as? UICollectionView
-            else { fatalError(error(view,of: UICollectionView.self)) }
-        
-        
-        let cell = collectionView.dequerCell(self, for: indexPath)
-        
-        guard let dequerCell = cell as? Self
-            else { fatalError() }
-        
+
+        let cell = dataSource.asCollection.dequerCell(self, for: indexPath)
+        guard let dequerCell = cell as? Self else { DequerError.notDequer(type: cell) }
         completion?(dequerCell,indexPath.row)
         return dequerCell
     }
     
-    static func register(in view: UIView,
+    static func register(in dataSource: DequerDataSource,
                          nibName: String = Self.dequerIdentifier,
                          bundle: Bundle = Bundle.main,
                          reuseIdentifier id: String = Self.dequerIdentifier) {
         
-        guard let collectionView = view as? UICollectionView
-            else { fatalError(error(view,of: UICollectionView.self)) }
-        
         let nib = UINib(nibName: nibName, bundle: bundle)
-        collectionView.register(nib, forCellWithReuseIdentifier: id)
+        dataSource.asCollection.register(nib, forCellWithReuseIdentifier: id)
     }
     
     static func bind(to cell: UIView, _ bind: (Self) -> Void) {
-        bind(cell as! Self)
+        guard let dequer = cell as? Self else { DequerError.notDequer(type: cell)}
+        bind(dequer)
     }
     
     

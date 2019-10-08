@@ -11,7 +11,7 @@ import UIKit
 
 class CollectionVC: UICollectionViewController {
     
-
+    
     lazy var animals: [Animal] = Animal.all
     
     override func viewDidLoad() {
@@ -19,12 +19,12 @@ class CollectionVC: UICollectionViewController {
         
         AnimalCell.register(in: self.collectionView)
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return self.animals.count
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         return AnimalCell.deque(in: collectionView, at: indexPath)
@@ -53,3 +53,6 @@ extension CollectionVC: UICollectionViewDelegateFlowLayout {
         return 30
     }
 }
+
+
+
