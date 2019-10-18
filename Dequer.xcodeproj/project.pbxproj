@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD553DD22338F08E000A900B /* DequerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD553DD12338F08E000A900B /* DequerDataSource.swift */; };
-		DD553DD82338FD50000A900B /* DequerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD553DD72338FD50000A900B /* DequerError.swift */; };
+		DD978F57235A39F0004448A5 /* DequerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD978F52235A39EF004448A5 /* DequerDataSource.swift */; };
+		DD978F58235A39F0004448A5 /* Dequer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD978F53235A39EF004448A5 /* Dequer.swift */; };
+		DD978F59235A39F0004448A5 /* Dequer+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD978F54235A39EF004448A5 /* Dequer+CollectionView.swift */; };
+		DD978F5A235A39F0004448A5 /* Dequer+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD978F55235A39EF004448A5 /* Dequer+TableView.swift */; };
+		DD978F5B235A39F0004448A5 /* DequerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD978F56235A39EF004448A5 /* DequerError.swift */; };
 		DD9A2AD323074DB900E0FB35 /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A2AD223074DB900E0FB35 /* MainNavigation.swift */; };
 		DD9A2AD52307549700E0FB35 /* Dequer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DD9A2AD42307549700E0FB35 /* Dequer.podspec */; };
 		DD9A2AD723076E4400E0FB35 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = DD9A2AD623076E4400E0FB35 /* LICENSE.md */; };
@@ -17,9 +20,6 @@
 		DDF8389D23071794009A7861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF8389B23071794009A7861 /* Main.storyboard */; };
 		DDF8389F23071796009A7861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF8389E23071796009A7861 /* Assets.xcassets */; };
 		DDF838A223071796009A7861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF838A023071796009A7861 /* LaunchScreen.storyboard */; };
-		DDF838AB230717F4009A7861 /* Dequer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838AA230717F4009A7861 /* Dequer.swift */; };
-		DDF838AD23071D94009A7861 /* Dequer+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838AC23071D94009A7861 /* Dequer+TableView.swift */; };
-		DDF838B0230722F6009A7861 /* Dequer+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838AF230722F6009A7861 /* Dequer+CollectionView.swift */; };
 		DDF838B223072468009A7861 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838B123072468009A7861 /* PersonCell.swift */; };
 		DDF838B4230725BF009A7861 /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838B3230725BF009A7861 /* TableVC.swift */; };
 		DDF838B6230726D0009A7861 /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF838B5230726D0009A7861 /* CollectionVC.swift */; };
@@ -32,8 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD553DD12338F08E000A900B /* DequerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequerDataSource.swift; sourceTree = "<group>"; };
-		DD553DD72338FD50000A900B /* DequerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequerError.swift; sourceTree = "<group>"; };
+		DD978F52235A39EF004448A5 /* DequerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DequerDataSource.swift; sourceTree = "<group>"; };
+		DD978F53235A39EF004448A5 /* Dequer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dequer.swift; sourceTree = "<group>"; };
+		DD978F54235A39EF004448A5 /* Dequer+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dequer+CollectionView.swift"; sourceTree = "<group>"; };
+		DD978F55235A39EF004448A5 /* Dequer+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dequer+TableView.swift"; sourceTree = "<group>"; };
+		DD978F56235A39EF004448A5 /* DequerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DequerError.swift; sourceTree = "<group>"; };
 		DD9A2AD223074DB900E0FB35 /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
 		DD9A2AD42307549700E0FB35 /* Dequer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dequer.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DD9A2AD623076E4400E0FB35 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
@@ -44,9 +47,6 @@
 		DDF8389E23071796009A7861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDF838A123071796009A7861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDF838A323071796009A7861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDF838AA230717F4009A7861 /* Dequer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dequer.swift; sourceTree = "<group>"; };
-		DDF838AC23071D94009A7861 /* Dequer+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dequer+TableView.swift"; sourceTree = "<group>"; };
-		DDF838AF230722F6009A7861 /* Dequer+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dequer+CollectionView.swift"; sourceTree = "<group>"; };
 		DDF838B123072468009A7861 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		DDF838B3230725BF009A7861 /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
 		DDF838B5230726D0009A7861 /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
@@ -69,11 +69,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD978F51235A39EF004448A5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DD978F52235A39EF004448A5 /* DequerDataSource.swift */,
+				DD978F53235A39EF004448A5 /* Dequer.swift */,
+				DD978F54235A39EF004448A5 /* Dequer+CollectionView.swift */,
+				DD978F55235A39EF004448A5 /* Dequer+TableView.swift */,
+				DD978F56235A39EF004448A5 /* DequerError.swift */,
+			);
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		DD978F5F235A3CA1004448A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DDF8388B23071794009A7861 = {
 			isa = PBXGroup;
 			children = (
 				DDF8389623071794009A7861 /* Dequer */,
 				DDF8389523071794009A7861 /* Products */,
+				DD978F5F235A3CA1004448A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,7 +108,7 @@
 		DDF8389623071794009A7861 /* Dequer */ = {
 			isa = PBXGroup;
 			children = (
-				DDF838A9230717AF009A7861 /* Source */,
+				DD978F51235A39EF004448A5 /* Source */,
 				DDF838B9230728BD009A7861 /* App */,
 				DDF8389723071794009A7861 /* AppDelegate.swift */,
 				DDF8389E23071796009A7861 /* Assets.xcassets */,
@@ -101,18 +121,6 @@
 			);
 			path = Dequer;
 			sourceTree = "<group>";
-		};
-		DDF838A9230717AF009A7861 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				DDF838AA230717F4009A7861 /* Dequer.swift */,
-				DD553DD12338F08E000A900B /* DequerDataSource.swift */,
-				DD553DD72338FD50000A900B /* DequerError.swift */,
-				DDF838AC23071D94009A7861 /* Dequer+TableView.swift */,
-				DDF838AF230722F6009A7861 /* Dequer+CollectionView.swift */,
-			);
-			path = Source;
-			sourceTree = SOURCE_ROOT;
 		};
 		DDF838B9230728BD009A7861 /* App */ = {
 			isa = PBXGroup;
@@ -179,6 +187,8 @@
 			dependencies = (
 			);
 			name = Dequer;
+			packageProductDependencies = (
+			);
 			productName = Dequer;
 			productReference = DDF8389423071794009A7861 /* Dequer.app */;
 			productType = "com.apple.product-type.application";
@@ -239,18 +249,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDF838B223072468009A7861 /* PersonCell.swift in Sources */,
-				DDF838AD23071D94009A7861 /* Dequer+TableView.swift in Sources */,
-				DD553DD22338F08E000A900B /* DequerDataSource.swift in Sources */,
-				DDF838AB230717F4009A7861 /* Dequer.swift in Sources */,
+				DD978F57235A39F0004448A5 /* DequerDataSource.swift in Sources */,
+				DD978F5A235A39F0004448A5 /* Dequer+TableView.swift in Sources */,
 				DDF838B4230725BF009A7861 /* TableVC.swift in Sources */,
 				DDF838C823074B1C009A7861 /* MohamadrezaView.swift in Sources */,
 				DDF838C623074A54009A7861 /* MainVC.swift in Sources */,
 				DDF838B6230726D0009A7861 /* CollectionVC.swift in Sources */,
-				DD553DD82338FD50000A900B /* DequerError.swift in Sources */,
 				DDF838B8230726F6009A7861 /* AnimalCell.swift in Sources */,
+				DD978F59235A39F0004448A5 /* Dequer+CollectionView.swift in Sources */,
+				DD978F58235A39F0004448A5 /* Dequer.swift in Sources */,
 				DD9A2AD323074DB900E0FB35 /* MainNavigation.swift in Sources */,
+				DD978F5B235A39F0004448A5 /* DequerError.swift in Sources */,
 				DDF838C023072922009A7861 /* Person.swift in Sources */,
-				DDF838B0230722F6009A7861 /* Dequer+CollectionView.swift in Sources */,
 				DDF8389823071794009A7861 /* AppDelegate.swift in Sources */,
 				DDF838C223074723009A7861 /* Animal.swift in Sources */,
 			);
