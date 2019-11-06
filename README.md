@@ -1,6 +1,13 @@
 
 ![Dequer is Light weight library to handle Any Cell](https://github.com/mohamadrezakoohkan/Dequer/blob/master/Dequer/Dequer.png)
 
+[![Platforms](https://img.shields.io/badge/platform-iOS-yellow.svg)]()
+[![Language](https://img.shields.io/badge/language-Swift_5.0-orange.svg)]()
+[![Build](https://img.shields.io/badge/build-passing-brightgreen)]()
+[![Test](https://img.shields.io/badge/test-passing-brightgreen)]()
+[![Document](https://img.shields.io/badge/docs-100%25-brightgreen)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
+[![Requirement](https://img.shields.io/badge/requirements-up%20to%20date-blue)]()
 # Dequer
 Dequer is a light weight library to handle Any Cell
 
@@ -119,7 +126,7 @@ override func collectionView(_ collectionView: UICollectionView, willDisplay cel
 
 ### Contact
 
-Follow and contact me on [Instagram](https://www.instagram.com/mohamadreza.codes/),  [Github](https://github.com/mohamadrezakoohkan), [LinkedIn](https://www.linkedin.com/in/mohammad-reza-koohkan-558306160/) or [stack overflow](https://stackoverflow.com/users/9706268/mohamad-reza-koohkan?tab=profile). If you find an issue [open a ticket](https://github.com/mohamadrezakoohkan/Dequerissues/new). You can send me email at mohamad_koohkan@icloud.com .
+Follow and contact me on [Instagram](https://www.instagram.com/mohamadreza.codes/),  [Github](https://github.com/mohamadrezakoohkan), [LinkedIn](https://www.linkedin.com/in/mohammad-reza-koohkan-558306160/) or [stack overflow](https://stackoverflow.com/users/9706268/mohamad-reza-koohkan?tab=profile). If you find an issue [open a ticket](https://github.com/mohamadrezakoohkan/Dequer/issues/new). You can send me email at mohamad_koohkan@icloud.com .
 
 ### License
 Dequer is released under the [MIT license](https://github.com/mohamadrezakoohkan/Dequer/blob/master/LICENSE.md).
