@@ -1,5 +1,5 @@
 
-![Dequer is Light weight library to handle Any Cell](https://github.com/mohamadrezakoohkan/Dequer/blob/master/Dequer/Dequer.png)
+![Dequer is Light weight library to handle Any Cell](https://raw.githubusercontent.com/mohamadrezakoohkan/Dequer/master/Dequer/Dequer.png)
 
 [![Platforms](https://img.shields.io/badge/platform-iOS-yellow.svg)]()
 [![Language](https://img.shields.io/badge/language-Swift_5.0-orange.svg)]()

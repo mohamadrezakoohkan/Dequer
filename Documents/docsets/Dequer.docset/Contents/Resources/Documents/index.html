@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dequer  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Dequer  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Dequer Docs</a> (76% documented)</p>
+        <p class="header-right"><a href="https://github.com/mohamadrezakoohkan/Dequer"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fgithub%2Ecom%2Fmohamadrezakoohkan%2Fdocsets%2FDequer%2Exml"><img src="img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Dequer Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Dequer  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/UICollectionView.html">UICollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UICollectionViewCell.html">UICollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UITableView.html">UITableView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UITableViewCell.html">UITableViewCell</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/Dequer.html">Dequer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/DequerDataSource.html">DequerDataSource</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p><img src="https://raw.githubusercontent.com/mohamadrezakoohkan/Dequer/master/Dequer/Dequer.png" alt="Dequer is Light weight library to handle Any Cell"></p>
+
+<p><a href=""><img src="https://img.shields.io/badge/platform-iOS-yellow.svg" alt="Platforms"></a>
+<a href=""><img src="https://img.shields.io/badge/language-Swift_5.0-orange.svg" alt="Language"></a>
+<a href=""><img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build"></a>
+<a href=""><img src="https://img.shields.io/badge/test-passing-brightgreen" alt="Test"></a>
+<a href=""><img src="https://img.shields.io/badge/docs-100%25-brightgreen" alt="Document"></a>
+<a href=""><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+<a href=""><img src="https://img.shields.io/badge/requirements-up%20to%20date-blue" alt="Requirement"></a></p>
+<h1 id='dequer' class='heading'>Dequer</h1>
+
+<p>Dequer is a light weight library to handle Any Cell</p>
+
+<p>One of the most used things in iOS development is deque <code>UITableViewCell</code> or <code>UICollectionViewCell</code> through <code>DataSources</code> and it has some configuration. I maded an extension and protocol which reuse a cell as clean as possible.  </p>
+<h2 id='availability' class='heading'>Availability</h2>
+
+<p>for the completion handler block  used in protocol which is a closure , every <strong>Cell class</strong> should mark with <strong>final</strong> this means that can not be override this class or use it as superclass and block inheritance.</p>
+<h2 id='protocol-oriented' class='heading'>Protocol oriented</h2>
+
+<p>every Cell class which conforms to <strong>Dequer</strong> can use this code.</p>
+<h2 id='extra' class='heading'>Extra</h2>
+
+<p>inside <strong>Cell</strong> there is a static variable named <strong>height</strong>  for <strong>UITableViewCell</strong> and <strong>size</strong> for <strong>UICollectionViewCell</strong> which can store the default height of that cell. this one in optional and you can remove it.</p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 9.3+</li>
+<li>Swift 4.0+
+&gt;  Also fully compatible with <strong>Swift</strong> version <strong>5.x</strong></li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p><a href="https://cocoapods.org">CocoaPods</a> is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Dequer into your Xcode project using CocoaPods, specify it in your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code>
+<span class="n">pod</span> <span class="s1">'Dequer'</span><span class="p">,</span> <span class="ss">:git</span> <span class="o">=&gt;</span> <span class="s1">'https://github.com/mohamadrezakoohkan/Dequer.git'</span>
+</code></pre>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
+
+<p>You can use <a href="https://swift.org/package-manager">The Swift Package Manager</a> to install <code><a href="Protocols/Dequer.html">Dequer</a></code> by adding the dequer package description to your <code>Package.swift</code> file:</p>
+<pre class="highlight swift"><code><span class="c1">// swift-tools-version:4.0</span>
+<span class="c1">// The swift-tools-version declares the minimum version of Swift required to build this package.</span>
+
+<span class="kd">import</span> <span class="kt">PackageDescription</span>
+
+<span class="k">let</span> <span class="nv">package</span> <span class="o">=</span> <span class="kt">Package</span><span class="p">(</span>
+    <span class="nv">name</span><span class="p">:</span> <span class="s">"YOUR_PROJECT_NAME"</span><span class="p">,</span>
+    <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+        <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/mohamadrezakoohkan/Dequer.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"1.2.3"</span><span class="p">),</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+</code></pre>
+
+<p>Then run <code>swift build</code> in Terminal to build <code><a href="Protocols/Dequer.html">Dequer</a></code>.</p>
+<h3 id='manually' class='heading'>Manually</h3>
+
+<p>If you prefer not to use any of the aforementioned dependency managers, you can use source code manually. get latest relase from <a href="https://github.com/mohamadrezakoohkan/Dequer/releases">Releases</a>.</p>
+<h2 id='usage' class='heading'>Usage</h2>
+<h3 id='example-project' class='heading'>Example project</h3>
+
+<p>Clone the project and use example project  for more.</p>
+
+<p>Example of how to implement Dequer in your project.</p>
+<pre class="highlight swift"><code>
+<span class="kd">import</span> <span class="kt">UIKit</span>
+<span class="kd">import</span> <span class="kt">Dequer</span>
+
+<span class="kd">final</span> <span class="kd">class</span> <span class="kt">PersonCell</span><span class="p">:</span> <span class="kt">UITableViewCell</span><span class="p">,</span> <span class="kt">Dequer</span> <span class="p">{</span>
+
+    <span class="kd">static</span> <span class="k">var</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">40</span>
+
+    <span class="k">override</span> <span class="kd">func</span> <span class="nf">awakeFromNib</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">super</span><span class="o">.</span><span class="nf">awakeFromNib</span><span class="p">()</span>
+
+    <span class="p">}</span>
+
+<span class="p">}</span>
+
+</code></pre>
+
+<p>inside UITableViewDataSource </p>
+<pre class="highlight swift"><code>
+<span class="k">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">cellForRowAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UITableViewCell</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kt">PersonCell</span><span class="o">.</span><span class="nf">deque</span><span class="p">(</span><span class="nv">in</span><span class="p">:</span> <span class="n">tableView</span><span class="p">,</span> <span class="nv">at</span><span class="p">:</span> <span class="n">indexPath</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="n">row</span><span class="p">)</span> <span class="k">in</span>
+        <span class="n">cell</span><span class="o">.</span><span class="n">textLabel</span><span class="p">?</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="err">\</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='data-binding' class='heading'>Data Binding</h3>
+
+<p>As binding data in <code>cellForRowAt</code> or <code>cellForItemAt</code> should be avoided,  I maded a method called <code>bind</code> which can use for data binding  In <a href="https://github.com/mohamadrezakoohkan/Dequer/commit/548dca9d73a05078e7e2c028db25e9e1e61e5fba#diff-04c6e90faac2675aa89e2176d2eec7d8">This Commit</a>.</p>
+<pre class="highlight swift"><code>
+<span class="k">override</span> <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">cellForItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UICollectionViewCell</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kt">AnimalCell</span><span class="o">.</span><span class="nf">deque</span><span class="p">(</span><span class="nv">in</span><span class="p">:</span> <span class="n">collectionView</span><span class="p">,</span> <span class="nv">at</span><span class="p">:</span> <span class="n">indexPath</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">override</span> <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">willDisplay</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">UICollectionViewCell</span><span class="p">,</span> <span class="n">forItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">AnimalCell</span><span class="o">.</span><span class="nf">bind</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="n">cell</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$0</span><span class="o">.</span><span class="n">animal</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="n">animals</span><span class="p">[</span><span class="n">indexPath</span><span class="o">.</span><span class="n">row</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='contact' class='heading'>Contact</h3>
+
+<p>Follow and contact me on <a href="https://www.instagram.com/mohamadreza.codes/">Instagram</a>,  <a href="https://github.com/mohamadrezakoohkan">Github</a>, <a href="https://www.linkedin.com/in/mohammad-reza-koohkan-558306160/">LinkedIn</a> or <a href="https://stackoverflow.com/users/9706268/mohamad-reza-koohkan?tab=profile">stack overflow</a>. If you find an issue <a href="https://github.com/mohamadrezakoohkan/Dequer/issues/new">open a ticket</a>. You can send me email at <a href="mailto:mohamad_koohkan@icloud.com">mohamad_koohkan@icloud.com</a> .</p>
+<h3 id='license' class='heading'>License</h3>
+
+<p>Dequer is released under the <a href="https://github.com/mohamadrezakoohkan/Dequer/blob/master/LICENSE.md">MIT license</a>.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://mohamadreza.codes/" target="_blank" rel="external">MohamadReza Koohkan</a>. All rights reserved. (Last updated: 2019-11-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
